@@ -1,0 +1,34 @@
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    width: 800px;
+    height: 800px;
+}
+body{
+    background-color:gray;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 950px;
+}
+
+.container > div{
+    padding:0;
+    background-color:white;
+    box-sizing:border-box;
+    flex-shrink:0;
+}
+.reload{
+    font-size:20px;
+    align-self: flex-start;
+    margin:10px;
+    border-radius:10px;
+    cursor: pointer;
+    transition: 0.2s;
+    padding:10px;
+}
+.reload:hover{
+    transform:scale(1.2);
+    color: white;
+    background-color:rgb(190, 191, 192)
+}
